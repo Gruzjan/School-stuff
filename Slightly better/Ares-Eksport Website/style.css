@@ -1,0 +1,139 @@
+/* Background color */
+body{
+    background-color: black !important;
+}
+
+/* Navbar */
+.my-navbar{
+    background: black;
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+}
+
+/* Hover of navbar items */
+.nav-item :hover, #a1 :hover{
+    background-color: #FFC40E;
+    transition: 1s;
+}
+
+/* Aligning navbar to center */
+.navbar-brand{
+    margin-left: 20%;
+}
+#a1{
+    margin-right: 20%;
+}
+
+/* clock */
+#clock{
+    margin-left: 8px;
+    color: white;
+    font-size: larger;
+}
+
+/* Remove decorations from hyperlinks */
+a{
+    text-decoration: none !important;
+    color: #F7F7F7 !important;
+}
+
+/* Whole site container */
+.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+/*About img filters */
+#about img{
+    filter: grayscale(100%) blur(1px);
+}
+
+/* Text in centre of image */
+.centered{
+    color: white;
+    line-height: 35px;
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Text on top of image */
+.top{
+    color: #FFC40E;
+    font-size: 5em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+/* portfolio carousel */
+#portfolio{
+    margin-top: 150px;
+    color: #FFC40E;
+    font-size: 5em;
+    text-align: center;
+}
+
+/* location div */
+#location{
+    margin-top: 150px;
+    color: #FFC40E;
+    font-size: 5em;
+    text-align: center;
+}
+
+#contact{
+    margin-top: 150px;
+}
+
+/* header of contact */
+#contact h1{
+    color: #FFC40E;
+    font-size: 5em;
+    text-align: center;
+}
+
+/* Contact info part */
+#left{
+    padding-left: 50px;
+    padding-top: 150px;
+    width: 50%;
+    float: left;
+    font-size: 1.5em;
+}
+
+/* Envelope */
+#right{
+    margin-top: 25px;
+    width: 50%;
+    float: left;
+}
+
+/* Contact content */
+.info{
+    margin-left: 15px;
+    color: white;
+}
+
+/* Contact titles */
+#left strong{
+    font-size: larger;
+    color: #FFC40E;
+}
+
+/* Footer */
+#footer{
+    margin-top: 150px;
+    width: 100%;
+    background-color: #FFC40E;
+    height: 50px;
+    text-align: center;
+    float: left;
+}

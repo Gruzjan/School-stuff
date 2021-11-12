@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.png"> 
+  <title>Ares Eksport</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <script src="timer.js" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    pre{
+      color: white;
+    }
+    h1{
+      color: #FFC40E;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    #footer{
+      margin-top: 261px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+    </a>
+
+    <!-- Burger -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar items in burger -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="hire-a-web-developer#about">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="hire-a-web-developer#portfolio">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="hire-a-web-developer#location">Location</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="hire-a-web-developer#contact">Contact</a>
+          </li>
+
+        </ul>
+    </div>
+
+    <!-- Clock placement-->
+    <a id="a1" href="#"><span id="clock" class="navbar-text"></span></a>
+
+  </nav>
+
+  <!-- timer code -->
+  <div class="container bcontent">
+    <h1>timer.js</h1>
+    <pre>
+window.onload = clock;
+
+function clock()
+  {
+    var today = new Date();
+          
+    var hours = today.getHours();
+    if (hours<10) hours = "0"+hours;
+          
+    var minutes = today.getMinutes();
+    if (minutes<10) minutes = "0"+minutes;
+          
+    var seconds = today.getSeconds();
+    if (seconds<10) seconds = "0"+seconds;
+          
+    document.getElementById("clock").innerHTML = hours+":"+minutes+":"+seconds;
+           
+    setTimeout("clock()",1000);
+  }
+    </pre>
+  </div>
+
+  <!-- Footer -->
+  <div>
+    <div id="footer" class="md-12">
+      <p><strong>&copy; AresEksport 2020</strong></p> 
+    </div>
+  </div>
+
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
