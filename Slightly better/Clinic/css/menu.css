@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.font-weight-normal{
+  text-align: center;
+}
+
+.text-blue{
+  color: #2AA5A5 !important;
+}
+
+.text-red{
+  color: #ff4141;
+}
+
+.text-white{
+  color: #fff !important;
+}
+
+.hr{
+  color: #ff4141 !important;
+  font-family: Georgia;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/* stick footer to bottom if not enough content */
+body { 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+/* index.php */
+#wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+#left {
+  background-image: url(../img/doc.jpg);
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-color: rebeccapurple;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#left:hover {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+}
+
+#right {
+  background-image: url(../img/reg.jpg);
+  width: 50%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+  right: 0px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+#right:hover {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+}

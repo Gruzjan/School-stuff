@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <div id="container">
+    <div id="navBar">
+        <ul>
+          <li><a href="#navBar"><img src="logo.png" height="40px"></a></li>
+          <li style="float:right"><a href="#kontakt">Kontakt</a></li>
+          <li style="float:right"><a href="#oferta">Moja oferta</a></li>
+          <li style="float:right"><a class="active" href="#about">O mnie</a></li>
+        </ul>
+    </div>
+    
+    <div id="tlo">
+       <img src="tlo.jpg" width="100%">        
+    </div>
+    
+    <div id="about">
+       <table>
+           <tr>
+               <td width="25%">
+                <div id="jpg">
+                    <img id="ja" src="ja.jpg" class="rounded" height="350px" >
+                </div>
+                </td>
+                <td>
+                    <div id="tekst">
+                      <b style="font-size: 25px;">Lorem ipsum</b> dolor sit amet, consectetur adipisicing elit. Facere iusto necessitatibus deserunt, magnam mollitia suscipit repudiandae aperiam, deleniti nemo voluptatem? Consequatur et,
+                      provident, recusandae beatae aperiam saepe, officiis ad fugiat laborum eos repellat ab! Atque alias, nihil veritatis dignissimos provident numquam magni quo, saepe, ducimus rem quidem ad,
+                      quod corporis? Incidunt facilis deserunt beatae necessitatibus non accusantium vitae possimus tempora, quae placeat. Numquam dolor vero nisi harum. Sed saepe asperiores distinctio.
+                      Modi, cumque enim quibusdam ex alias omnis inventore eum fuga vel obcaecati ab numquam autem nulla quasi, sequi veniam amet magni, earum! Veritatis, minima. Magni praesentium culpa
+                      numquam voluptatum ab hic tempora consectetur iure rerum ut debitis, explicabo, nemo eius quod magnam quibusdam optio saepe quia adipisci dolor consequuntur laborum.
+                      Cupiditate nemo repellendus eius labore, rerum velit in iure ad molestias excepturi, dicta sunt est ratione cumque recusandae facere. Quod ea mollitia et magnam repudiandae
+                      inventore eaque cupiditate. Dignissimos?
+                    </div>
+                </td>
+            </tr>
+       </table>
+    </div>
+      
+    <div id="oferta">
+        <h1 style="text-align: center; color: white;">Co oferuję?</h1>
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                      <h3 class="card-header">
+                        C#
+                      </h3>
+                      <img class="card-img-top" src="cs.png" height="300px" alt="Obrazek w karcie">
+                      <div class="card-block">
+                        <p class="card-text">Od gier, po zwykłe małe programy.</p>
+                        <a href="#kontakt" class="btn btn-primary">Kontakt</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                      <h3 class="card-header">
+                        HTML, JS, CSS
+                      </h3>
+                      <img class="card-img-top" src="html.png" height="300px"  alt="Obrazek w karcie">
+                      <div class="card-block">
+                        <p class="card-text">Portfolio, a może strona dla firmy?</p>
+                        <a href="#kontakt" class="btn btn-primary">Kontakt</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                      <h3 class="card-header">
+                        Java
+                      </h3>
+                      <img class="card-img-top" src="java.png" height="300px" alt="Obrazek w karcie">
+                      <div class="card-block">
+                        <p class="card-text">Gra mobilna? Aplikacja? Żaden problem.</p>
+                        <a href="#kontakt" class="btn btn-primary">Kontakt</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+     
+    <div id="kontakt">
+        <h1 style="text-align: center;">Kontakt</h1>
+      <form class="align-items-center">
+        <div class="form-group">
+          <label for="przykladowyEmail">Twój Email</label>
+          <input type="email" class="form-control" id="przykladowyEmail" placeholder="experto@credite.pl">
+        </div>
+        <div class="form-group">
+          <label for="przykladowySelect">Wybierz temat</label>
+          <select class="form-control" id="przykladowySelect">
+            <option>C#</option>
+            <option>HTML, JS, CSS</option>
+            <option>Java</option>
+            <option>Pytanie ogólne</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="przykladowaTextarea">Twoja wiadomość</label>
+          <textarea class="form-control" id="przykladowaTextarea" rows="3"></textarea>
+        </div>
+        <!-- <button type="alert" class="btn btn-primary">Wyślij</button> -->
+        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Wyślij</a>
+      </form>
+    </div>
+
+       
+</div>    
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

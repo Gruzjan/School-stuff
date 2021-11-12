@@ -1,0 +1,57 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#b1{
+    text-align: center;
+    width: 75%;
+    height: 150px;
+    font-size: 200%;
+    float: left;
+}
+#b2{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#main{
+    background-color: rgb(128, 0, 0);
+    padding: 50px;
+    text-transform: uppercase;
+    clear: both;
+}
+#s1, #s2, #s3{
+    float: left;
+}
+#s1, #s3{
+    width: 20%;
+    padding-top: 90px;
+}
+#s2{
+    text-align: center;
+    width: 60%;
+}
+body{
+    font-family: Arial;
+    background-color: rgb(244, 164, 96);
+    color: White;
+}
+p{
+    font-size: 150%;
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(169,169,169);
+}
+p:hover{
+    background-color: rgb(169, 169, 169);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    padding: 5px;
+}
